@@ -3,7 +3,7 @@ import numpy as np
 def isSingular(A) :
     B = np.array(A, dtype=np.float_) # Make B as a copy of A, since we're going to alter it's values.
     try:
-        fixRow(B)
+        fixRowZero(B)
         fixRowOne(B)
         fixRowTwo(B)
         fixRowThree(B)
